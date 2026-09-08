@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2d5f8d;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #4878a7;
+  --color-on-primary-container: #fdfcff;
+  --color-primary-fixed: #d0e4ff;
+  --color-primary-fixed-dim: #9ccafe;
+  --color-on-primary-fixed: #001d35;
+  --color-on-primary-fixed-variant: #0f4976;
+
+  --color-secondary: #3d6187;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #aed2fe;
+  --color-on-secondary-container: #365a80;
+  --color-secondary-fixed: #d1e4ff;
+  --color-secondary-fixed-dim: #a6c9f5;
+  --color-on-secondary-fixed: #001d36;
+  --color-on-secondary-fixed-variant: #23496e;
+
+  --color-tertiary: #3b6174;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #54798e;
+  --color-on-tertiary-container: #fbfcff;
+  --color-tertiary-fixed: #c1e8ff;
+  --color-tertiary-fixed-dim: #a5cce2;
+  --color-on-tertiary-fixed: #001e2b;
+  --color-on-tertiary-fixed-variant: #244b5e;
+
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #ccdbf6;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-variant: #d5e3ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container: #e7eeff;
+  --color-surface-container-high: #dee8ff;
+  --color-surface-container-highest: #d5e3ff;
+
+  --color-on-surface: #0d1c30;
+  --color-on-surface-variant: #42474f;
+  --color-outline: #727780;
+  --color-outline-variant: #c2c7d0;
+  --color-background: #f9f9ff;
+  --color-on-background: #0d1c30;
+  --color-inverse-surface: #233146;
+  --color-inverse-on-surface: #ebf1ff;
+
+  --font-display-hero: "Geist", sans-serif;
+  --font-headline: "Geist", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Geist Mono", "Geist", monospace;
+
+  --spacing-space-3xs: 0.125rem;
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-3xl: 4rem;
+  --spacing-space-4xl: 6rem;
+  --spacing-space-5xl: 8rem;
+  --spacing-container-max: 1240px;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-gutter-tablet: 2rem;
+  --spacing-gutter-desktop: 2.5rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body), "Inter", sans-serif;
+    color: var(--color-on-surface);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline), "Geist", sans-serif;
+  }
+}
+
+.font-code-mono {
+  font-family: "Geist Mono", "Geist", monospace;
+}
+
+.font-headline-xl {
+  font-family: "Geist", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .font-headline-xl {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+.font-headline-lg {
+  font-family: "Geist", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .font-headline-lg {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.font-headline-md {
+  font-family: "Geist", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.015em;
+}
+
+.font-headline-sm {
+  font-family: "Geist", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.font-body-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-body-md {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.font-body-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+
+.font-label-md {
+  font-family: "Geist", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.font-label-sm {
+  font-family: "Geist", sans-serif;
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.06em;
+}
+
+.text-code-mono {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.02em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
