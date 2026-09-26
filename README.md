@@ -2,7 +2,7 @@
 
 My personal portfolio website built to showcase my projects, skills, and experience.
 
-**Live Demo:** [your-live-url-here](#)
+**Live Demo:** [Live Site](https://aishwarya-ruddy.vercel.app/)
 
 ## Tech Stack
 
