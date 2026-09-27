@@ -158,7 +158,7 @@ export const ProjectsSection: React.FC = () => {
               <p className="font-body-md text-[15px] text-[#42474f] leading-relaxed">
                 An AI-powered shopping assistant that lets users upload an image to find
                 similar products online, track prices, and get notified when a price
-                drops — making shopping smarter and automated. Built as a Python backend
+                drops - making shopping smarter and automated. Built as a Python backend
                 for an end-to-end product.
               </p>
 
